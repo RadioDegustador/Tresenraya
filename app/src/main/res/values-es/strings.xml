@@ -1,4 +1,4 @@
-<resourrces>
+<resources>
     <string name="app_name">Tic Tac Toe</string>
     <string name="un_jugador">1 Jugador</string>
     <string name="dos_jugadores">2 Jugadores</string>
@@ -9,4 +9,5 @@
     <string name="circulos">Circulos Gana!</string>
     <string name="aspas">Equis Gana!</string>
     <string name="empate">Ambos son un asco, nadie Gana!</string>
-</resourrces>
+</resources>
+
