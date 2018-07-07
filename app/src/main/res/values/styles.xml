@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Redefinimos la aplicación del tema para que no sea necesario ajustar manualmente las visualizaciones-->
+    <style name="AppTheme" parent="android:Theme.Holo.NoActionBar.Fullscreen">
+        <!-- Customize your theme here. -->
+        <!-- Aqui vamos a personalizar las dimensiones con las definidas en el archivo dimens-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- se definen las nuevas dimensiones para el titulo del juego que van a ser importadas desde dimens, además
+    se dfine que ahora el layout de titulo siempre va a ser wrap_content-->
+    <style name="titulo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/texto_titulo</item>
+    </style>
+
+    <!--Estilo de Botones de inicio de juego -->
+    <style name="boton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/ancho_min_bot</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/alto_min_bot</item>
+        <item name="android:layout_margin">@dimen/marg_bot</item>
+        <item name="android:textSize">@dimen/texto_boton</item>
+        <item name="android:onClick">nuevoJuego</item> <!-- Se agrega el metodo OnClick para todos los botones, para identificar se usará el @id-->
+    </style>
+
+    <!-- Estilo de la selección de dificultad -->
+    <style name="radio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/texto_radio</item>
+        <item name="android:alpha">0.7</item> <!--Alpha es la medida de transparencia para el texto auxiliar-->
+    </style>
+
+    <!-- Estilo de Casillas  / se llama el método OnClick, en este caso lo llamamos toque-->
+    <style name="casilla">
+        <item name="android:layout_width">@dimen/casilla</item>
+        <item name="android:layout_height">@dimen/casilla</item>
+        <item name="android:src">@drawable/casilla</item>
+        <item name="android:onClick">toque</item>
+    </style>
+
+</resources>
