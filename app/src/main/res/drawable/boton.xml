@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-
+<!-- Ahora agregamo un archivo xml que aditara el estilo de los botones, como la forma de las curvas y el color -->
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="#303f9f"/>
+            <corners android:radius="@dimen/radio_boton"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#ff80ab"/>
+            <corners android:radius="@dimen/radio_boton"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#c5cae9"
+                android:endColor="#3f51b5"
+                android:angle="270"/>
+        </shape>
+    </item>
 </selector>
+
+<!-- Los selectores se analizan por orden y por eso el selector general debe ser el último en la lista -->
+<!-- Los selectores no aceptan los colores en hexadecimal, por eso tiene que crearse antes en un archivo colors.xml y se asignan
+al selector, de los contrario hay que agregarlos al selector en una forma <shape> -->

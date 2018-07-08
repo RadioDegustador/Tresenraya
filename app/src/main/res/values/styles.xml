@@ -25,6 +25,7 @@
         <item name="android:minHeight">@dimen/alto_min_bot</item>
         <item name="android:layout_margin">@dimen/marg_bot</item>
         <item name="android:textSize">@dimen/texto_boton</item>
+        <item name="android:background">@drawable/boton</item>
         <item name="android:onClick">nuevoJuego</item> <!-- Se agrega el metodo OnClick para todos los botones, para identificar se usará el @id-->
     </style>
 
